@@ -3,7 +3,7 @@
     padding: 4.5em 0;
   }
   .special-item__inner {
-    padding: 4em 0em;
+    padding: 32px 0;
   }
   .special-item + .special-item {
     margin-top: 20px;
@@ -28,6 +28,12 @@
   }
   .special-item__code-delimiter {
     font-size: 15px;
+  }
+  .special-item__info_promo + .special-item__info_promo {
+    margin-top: 40px;
+  }
+  .special-item__dots {
+    height: 235px;
   }
 }
 
