@@ -38,8 +38,7 @@ $color-promo:#FFF8EA;
 $color-content:#F7F7F7;
 $color-special-item__point:#EA6263;
 $color-special-item__point_text:#FFFFFF;
-$color-info-text:#999999;
-$color-special-item__point_disabled:#999999;
+$color-gray-text:#999999;
 
 @mixin flexible_column(){
   display: flex;
@@ -155,9 +154,6 @@ body{
 		@include flexible_column();
 		justify-content: flex-start;
 		width: 100%;
-		&_promo+&_promo{
-			margin-top: 3em;
-		}
 		&_content+&_content{
 			margin-top: 1.5em;
 		}
@@ -171,11 +167,28 @@ body{
 	}
 	&__share{
 		@include flexible_row();
+		margin-top: 62px;
+	}
+	&__logo{
+		margin-top: 56px;
+	}
+
+	&__share-text{
+		font-family: Formular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		line-height: 154%;
+		text-align: center;
+		color:$color-gray-text;
+		&_mobile{
+			display: none;
+		}
 	}
 	&__text{
 		font-size: 13px;
 		line-height: 138%;
-		color: $color-info-text;
+		color: $color-gray-text;
 	}
 ///////////////////////////CONTENT//////////////////////////////////
 	&__content{
@@ -230,7 +243,7 @@ body{
 		width: 3rem;
 		height: 3rem;
 		&_disabled{
-			background-color: $color-special-item__point_disabled;
+			background-color: $color-gray-text;
 		}
 	}
 }
@@ -283,7 +296,7 @@ body{
 	height: 1.5em;
 	background: #FFFFFF;
 	border: 1px solid #E6E6E6;
-	box-sizing: border-box;
+	// box-sizing: border-box;
 	border-radius: 2px;
 	img{
 		vertical-align: middle;

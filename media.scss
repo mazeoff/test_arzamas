@@ -1,5 +1,6 @@
 //mobile
 @media only screen and (max-device-width: 667px) {
+  $color-share-item__text:#E6E6E6;
   .special-content__inner{
     padding: 4.5em 0;
   }
@@ -32,12 +33,32 @@
       font-size: 15px;
     }
     &__info{
-      &_promo+&_promo{
-        margin-top: 40px;
-      }
     }
     &__dots{
       height: 235px;
+    }
+    &__logo{
+      margin-top: 32px;
+    }
+    &__share{
+      margin-top: 15px;
+    }
+    &__share-text{
+      margin-top: 80px;
+  		&_mobile{
+  			display: block;
+  		}
+  	}
+  }
+  .share-item{
+    width: 0;
+    padding: 0 21px;
+    border: none;
+    border-right: 1px solid $color-share-item__text;
+    border-radius: 0;
+    background: none;
+    &:last-child{
+      border-right: none
     }
   }
 

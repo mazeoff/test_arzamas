@@ -190,10 +190,6 @@ body {
   width: 100%;
 }
 
-.special-item__info_promo + .special-item__info_promo {
-  margin-top: 3em;
-}
-
 .special-item__info_content + .special-item__info_content {
   margin-top: 1.5em;
 }
@@ -211,6 +207,25 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-top: 62px;
+}
+
+.special-item__logo {
+  margin-top: 56px;
+}
+
+.special-item__share-text {
+  font-family: Formular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 154%;
+  text-align: center;
+  color: #999999;
+}
+
+.special-item__share-text_mobile {
+  display: none;
 }
 
 .special-item__text {
@@ -355,7 +370,6 @@ body {
   height: 1.5em;
   background: #FFFFFF;
   border: 1px solid #E6E6E6;
-  box-sizing: border-box;
   border-radius: 2px;
 }
 

@@ -29,11 +29,31 @@
   .special-item__code-delimiter {
     font-size: 15px;
   }
-  .special-item__info_promo + .special-item__info_promo {
-    margin-top: 40px;
-  }
   .special-item__dots {
     height: 235px;
+  }
+  .special-item__logo {
+    margin-top: 32px;
+  }
+  .special-item__share {
+    margin-top: 15px;
+  }
+  .special-item__share-text {
+    margin-top: 80px;
+  }
+  .special-item__share-text_mobile {
+    display: block;
+  }
+  .share-item {
+    width: 0;
+    padding: 0 21px;
+    border: none;
+    border-right: 1px solid #E6E6E6;
+    border-radius: 0;
+    background: none;
+  }
+  .share-item:last-child {
+    border-right: none;
   }
 }
 
