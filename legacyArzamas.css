@@ -1,0 +1,1445 @@
+/*----------LegacyArzamas.css----------*/
+*:focus {
+    outline-color: #3b99fc;
+    outline-style: auto;
+    outline-width: 5px
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+header,
+nav,
+section,
+article,
+aside,
+footer,
+figure,
+figcaption,
+details,
+hgroup {
+    padding: 0;
+    margin: 0;
+    outline: 0
+}
+
+html {
+    height: 100%;
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+
+html,
+body {
+    line-height: 1
+}
+
+caption,
+th {
+    text-align: left
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1em;
+    line-height: 1
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+    height: auto
+}
+
+ul,
+ol {
+    list-style-type: none
+}
+
+a {
+    cursor: pointer;
+    text-decoration: underline
+}
+
+a:hover,
+a:active {
+    outline: none
+}
+
+header,
+nav,
+section,
+article,
+aside,
+footer,
+figure,
+figcaption,
+details,
+hgroup,
+main,
+summary {
+    display: block
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+
+audio:not([controls]) {
+    display: none
+}
+
+button,
+input,
+select,
+textarea {
+    margin: 0;
+    font-size: 100%;
+    vertical-align: middle;
+    font-family: Arial, sans-serif
+}
+
+[hidden] {
+    display: none
+}
+
+button,
+input {
+    *overflow: visible;
+    line-height: normal
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button
+}
+
+input[type="search"] {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-appearance: textfield
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: ""
+}
+
+.clearfix:after {
+    clear: both
+}
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+b,
+strong {
+    font-weight: bold
+}
+
+dfn {
+    font-style: italic
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em
+}
+
+pre {
+    white-space: pre-wrap
+}
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019"
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+legend {
+    border: 0;
+    padding: 0
+}
+
+button,
+input {
+    line-height: normal
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+html.overflow-hidden {
+    overflow: hidden
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+    font: normal 15px/1.334 "Formular", sans-serif;
+    color: #4c4c4c;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition: margin 0.5s ease;
+    -moz-transition: margin 0.5s ease;
+    -ms-transition: margin 0.5s ease;
+    -o-transition: margin 0.5s ease;
+    transition: margin 0.5s ease
+}
+
+body.noscroll {
+    overflow: hidden !important
+}
+
+a {
+    color: #1a1a1a;
+    border-bottom: 1px solid transparent;
+    text-decoration: none
+}
+
+a,
+a:before,
+a:after {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease
+}
+
+a:hover {
+    border-bottom: 1px solid
+}
+
+h1 {
+    color: #1a1a1a;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 30px
+}
+
+h1 span.label {
+    font-family: "Lava 3", serif, Arial, Helvetica, Geneva, sans-serif;
+    font-weight: normal;
+    font-style: italic
+}
+
+h1[data-scroll] {
+    cursor: pointer
+}
+
+h2 {
+    color: #1a1a1a;
+    font-size: 30px;
+    font-weight: 800
+}
+
+h3 {
+    font-size: 21px;
+    font-weight: 500
+}
+
+h4 {
+    font-size: 17px;
+    line-height: 25px;
+    color: #1a1a1a;
+    margin-bottom: 25px
+}
+
+h5 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin-bottom: 18px
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"] {
+    display: inline-block;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #595959;
+    border-radius: 0;
+    width: 100%;
+    height: 30px;
+    font: inherit;
+    line-height: 1.42857;
+    color: inherit;
+    padding: 5px 0;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+small {
+    font-size: 11px
+}
+
+@font-face {
+    font-family: "Formular";
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url(https://cdn-s-assets.arzamas.academy/assets/formular-regular-2937601e5f6bc39b892ef9dbf972724f426a7c1a4b5fca997537e31e97ac7525.eot);
+    src: url(https://cdn-s-assets.arzamas.academy/assets/formular-regular-2937601e5f6bc39b892ef9dbf972724f426a7c1a4b5fca997537e31e97ac7525.eot?#iefix) format("embedded-opentype"), url(https://cdn-s-assets.arzamas.academy/assets/formular-regular-5ca02978ee9334d64da05ce52b938ac24b7c1aa4ca61ec59d74f4f1dee2da371.woff) format("woff"), url(https://cdn-s-assets.arzamas.academy/assets/formular-regular-5f73fe7522927ae09ccc718920c871076bae0d692f8f74681e67970e7a35888e.ttf) format("truetype"), url(https://cdn-s-assets.arzamas.academy/assets/formular-regular-625c994cda5d5d96bdb5378d014328738cace3b873a698dc767ed1d8bbb1e1b4.svg#Formular) format("svg")
+}
+
+@font-face {
+    font-family: "Formular";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url(https://cdn-s-assets.arzamas.academy/assets/formular-medium-df0b8f7f3b9bfe24733447f04d1694bbf13aed924a52bede1afd6368e174ce2f.eot);
+    src: url(https://cdn-s-assets.arzamas.academy/assets/formular-medium-df0b8f7f3b9bfe24733447f04d1694bbf13aed924a52bede1afd6368e174ce2f.eot?#iefix) format("embedded-opentype"), url(https://cdn-s-assets.arzamas.academy/assets/formular-medium-6a46a96c822a1c4a9ec19e52b6b3b2d7d9f32b7dbadc447dce7c58b553f3300d.woff) format("woff"), url(https://cdn-s-assets.arzamas.academy/assets/formular-medium-88c6eccd589bf5bbfafe3bef09038134b480002a1e190142c4e890f5e80f9000.ttf) format("truetype"), url(https://cdn-s-assets.arzamas.academy/assets/formular-medium-64079eb2363aa49dc2c1b2d3dfdf7a06456ff2af1b2f322105e275e5c1834202.svg#Formular-Medium) format("svg")
+}
+
+@font-face {
+    font-family: "Formular";
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    src: url(https://cdn-s-assets.arzamas.academy/assets/formular-bold-0337e90b68c4875452a0c0bd15fd616286e880a42bfac931cd0af89f637d7d6c.eot);
+    src: url(https://cdn-s-assets.arzamas.academy/assets/formular-bold-0337e90b68c4875452a0c0bd15fd616286e880a42bfac931cd0af89f637d7d6c.eot?#iefix) format("embedded-opentype"), url(https://cdn-s-assets.arzamas.academy/assets/formular-bold-589e6e7e76a8233993154075e2f2018d8f735e41aaaa490e7ea2737c32d7d657.woff) format("woff"), url(https://cdn-s-assets.arzamas.academy/assets/formular-bold-8e2d00a1198fd1da0958521d4cb4ff72c199bda430ecf6ab47d4d9c686bcf555.ttf) format("truetype"), url(https://cdn-s-assets.arzamas.academy/assets/formular-bold-d16a18ed3b2f819cd43cc9eba8107a017319ec251898d1ca073d3d02be4961d0.svg#Formular-Bold) format("svg")
+}
+
+@font-face {
+    font-family: "Formular";
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    src: url(https://cdn-s-assets.arzamas.academy/assets/formular-black-b2dd446f32325c5dba006c4be3a34bb92c6f57f0499945979690e7ef3005de59.eot);
+    src: url(https://cdn-s-assets.arzamas.academy/assets/formular-black-b2dd446f32325c5dba006c4be3a34bb92c6f57f0499945979690e7ef3005de59.eot?#iefix) format("embedded-opentype"), url(https://cdn-s-assets.arzamas.academy/assets/formular-black-fa836e42da24ce279d8d4bacd1f7285c6246fd63e836fe708e0ffb58db5733dc.woff) format("woff"), url(https://cdn-s-assets.arzamas.academy/assets/formular-black-a6cddf9d7ee54c159f6313fb8da3c87d9102d11de72602a187f267102c00441e.ttf) format("truetype"), url(https://cdn-s-assets.arzamas.academy/assets/formular-black-2353414f914fa49c6b1ad13a9357a21d19073ced4e800f8421977bf1f3176bbe.svg#Formular-Black) format("svg")
+}
+
+@font-face {
+    font-family: "ForFun";
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: local("Aa-Gg-Roman"), url(https://cdn-s-assets.arzamas.academy/assets/Aa-Gg-Roman-382106ebe33ff0fa5601b6078f2a2a5d2f5092cbc0ac57dbb6f63c46e829e477.woff2) format("woff2"), url(https://cdn-s-assets.arzamas.academy/assets/Aa-Gg-Roman-5db7fe8a56f0219b1321e4516e39bb09a50f59e6de352766fe381fcd83e699b2.woff) format("woff"), url(https://cdn-s-assets.arzamas.academy/assets/Aa-Gg-Roman-4243395cc185cc10886c5f4ff0df93f680f1a4d3e7d6657160c29c94c0c463f5.ttf) format("ttf"), url(https://cdn-s-assets.arzamas.academy/assets/Aa-Gg-Roman-635329241f549fa255689fc407a2feb7ed59c5bd78a4396885bcade85fc323b0.eot) format("eot")
+}
+
+@font-face {
+    font-family: "ForFun";
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    src: local("Aa-Gg-Bold"), url(https://cdn-s-assets.arzamas.academy/assets/Aa-Gg-Bold-cd209ef2e6b4ad9a850513dfb47b3e1ce8e6ca5b4e26e936776b939c95061321.woff2) format("woff2"), url(https://cdn-s-assets.arzamas.academy/assets/Aa-Gg-Bold-ec7ac76964206c18b1b83bf9c559af6a5097c6a0399b0a0449bb8cf92242432f.woff) format("woff"), url(https://cdn-s-assets.arzamas.academy/assets/Aa-Gg-Bold-608295a978b15e7bb5e09236e0d0314e0c1d8f932ab01810e9c903e6a7098280.ttf) format("ttf"), url(https://cdn-s-assets.arzamas.academy/assets/Aa-Gg-Bold-ecb328095d88b1decd5116cedcb161be189124803cf724a9a9ba807cf499d380.eot) format("eot")
+}
+
+@font-face {
+    font-family: "Lava 3";
+    src: url(https://cdn-s-assets.arzamas.academy/assets/lava/v4/WF-024344-008038-001181-e3fb2d41c1a686cda868d9ff259ddca8cc26fa0b2102c44b0d3ac9b439b68232.eot);
+    src: url(https://cdn-s-assets.arzamas.academy/assets/lava/v4/WF-024344-008038-001181-e3fb2d41c1a686cda868d9ff259ddca8cc26fa0b2102c44b0d3ac9b439b68232.eot?#iefix) format("embedded-opentype"), url(https://cdn-s-assets.arzamas.academy/assets/lava/v4/WF-024344-008038-001181-876a4e5d82130d797346478095b09ae211b47435c9d65ec8191f59aec1acd6b3.woff) format("woff"), url(https://cdn-s-assets.arzamas.academy/assets/lava/v4/WF-024344-008038-001181-009be94ba136378f9300ae675836909e6be34c67cbd0fc2e0b246a2d0769907b.ttf) format("truetype"), url(https://cdn-s-assets.arzamas.academy/assets/lava/v4/WF-024344-008038-001181-b09004761559d005fca17a8de6063c194f13ad25f1304bf870b45152f98afc27.svg#typotheque_webfonts_service) format("svg");
+    font-style: Normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Lava 3";
+    src: url(https://cdn-s-assets.arzamas.academy/assets/lava/v4/WF-024344-008038-001182-e458972f5c7ee34679d144e9f5e8e5ef01cf4b37949f8b68461498237fcb6a9c.eot);
+    src: url(https://cdn-s-assets.arzamas.academy/assets/lava/v4/WF-024344-008038-001182-e458972f5c7ee34679d144e9f5e8e5ef01cf4b37949f8b68461498237fcb6a9c.eot?#iefix) format("embedded-opentype"), url(https://cdn-s-assets.arzamas.academy/assets/lava/v4/WF-024344-008038-001182-9f243506a012b50e135195911251f051918892e01dc216c6677274d1f1ef3849.woff) format("woff"), url(https://cdn-s-assets.arzamas.academy/assets/lava/v4/WF-024344-008038-001182-6daf9339f30e6dc57fe7984807ee64f7c9cc324d01dbdd17215b4708383b8ce4.ttf) format("truetype"), url(https://cdn-s-assets.arzamas.academy/assets/lava/v4/WF-024344-008038-001182-01d6023b89a4dcd1dd3c50f18e6fbc9bbdc5edfea55ea83ebda4bc7f3d9bbb8f.svg#typotheque_webfonts_service) format("svg");
+    font-style: Italic;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Lava 3";
+    src: url(https://cdn-s-assets.arzamas.academy/assets/lava/v4/WF-024344-008038-001185-eec3a5d107f3c1f53c18d33afd98f1fcc1547887b2e8177c2a04f7e0bb854052.eot);
+    src: url(https://cdn-s-assets.arzamas.academy/assets/lava/v4/WF-024344-008038-001185-eec3a5d107f3c1f53c18d33afd98f1fcc1547887b2e8177c2a04f7e0bb854052.eot?#iefix) format("embedded-opentype"), url(https://cdn-s-assets.arzamas.academy/assets/lava/v4/WF-024344-008038-001185-ea14dc7ff89b9a87b0122cde06d2cc4230fceea786e44228e7868f52acd85c7d.woff) format("woff"), url(https://cdn-s-assets.arzamas.academy/assets/lava/v4/WF-024344-008038-001185-f538df08121ea46d5d8b08fcec10f33371cd1cd4512dbed6d66524b9b2b8ee35.ttf) format("truetype"), url(https://cdn-s-assets.arzamas.academy/assets/lava/v4/WF-024344-008038-001185-26569734fb10cded5722277159936557183af1b73ea752c4abd7995b9e7782c2.svg#typotheque_webfonts_service) format("svg");
+    font-style: Normal;
+    font-weight: 700;
+    font-stretch: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Lava 3";
+    src: url(https://cdn-s-assets.arzamas.academy/assets/lava/v4/WF-024344-008038-001187-15cf0ab820da02eb91bb7c9fd49692b32baa39af538678195f2419a82893c883.eot);
+    src: url(https://cdn-s-assets.arzamas.academy/assets/lava/v4/WF-024344-008038-001187-15cf0ab820da02eb91bb7c9fd49692b32baa39af538678195f2419a82893c883.eot?#iefix) format("embedded-opentype"), url(https://cdn-s-assets.arzamas.academy/assets/lava/v4/WF-024344-008038-001187-918e4ff374094c888395ba5c471defa5087b327468af357fb0b9f3284acb75bd.woff) format("woff"), url(https://cdn-s-assets.arzamas.academy/assets/lava/v4/WF-024344-008038-001187-9776ccc9c9a2596d0f8c2fa30fe727955b32d043723180f40983b67932aa9a65.ttf) format("truetype"), url(https://cdn-s-assets.arzamas.academy/assets/lava/v4/WF-024344-008038-001187-f71b498ac97a1ae67b6d973c4db199e02f7b4d778eec765b31894d1d46b2d0e0.svg#typotheque_webfonts_service) format("svg");
+    font-style: Normal;
+    font-weight: 800;
+    font-stretch: normal;
+    font-display: swap
+}
+
+table {
+    width: 100%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -0.5em
+}
+
+sub {
+    bottom: -0.25em
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em
+}
+
+.placeholder {
+    color: #999
+}
+
+.noscript,
+.chromeframe {
+    width: 100%;
+    background: #fee4a9;
+    font-size: 14px;
+    line-height: 2;
+    text-align: center;
+    box-shadow: 0 -3px 2px -2px #c1ae81 inset
+}
+
+.noscript a,
+.chromeframe a {
+    text-decoration: underline
+}
+
+.g-tag {
+    display: block;
+    font: italic normal 13px/1 "Lava 3", serif, Arial, Helvetica, Geneva, sans-serif;
+    color: #4c4c4c
+}
+
+.body-disabled {
+    display: none;
+    background: rgba(255, 255, 255, 0.6);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    cursor: url(https://cdn-s-assets.arzamas.academy/assets/disabled-cross-601589e773eaf26dfc46b05342c79fb5b595d597755fe610e7596c4253a065f3.png), pointer
+}
+
+.svg-filters {
+    display: none
+}
+
+@media only screen and (max-width: 667px) {
+    .only-desktop {
+        display: none !important
+    }
+}
+
+@media only screen and (min-width: 667px) {
+    .only-mobile {
+        display: none !important
+    }
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px
+}
+
+body.mobile-menu-active {
+    margin-left: 272px;
+    position: fixed
+}
+
+@media only screen and (max-width: 667px) {
+    body.mobile-top-banner-active {
+        margin-top: 96px
+    }
+    body.mobile-top-banner-active .content-overflow {
+        position: relative
+    }
+}
+
+.top-banner {
+    width: 100%;
+    height: 96px;
+    top: -96px;
+    position: absolute;
+    padding: 16px 0 0 96px;
+    box-sizing: border-box;
+    background: #262626;
+    z-index: 99;
+    transition: top 0.5s ease
+}
+
+.top-banner--hidden {
+    display: none
+}
+
+.mobile-top-banner-active .top-banner {
+    top: 0;
+    left: 0;
+    transition: none
+}
+
+.mobile-menu-active .top-banner {
+    left: -272px;
+    top: -96px;
+    transition: left 0.5s ease
+}
+
+.top-banner:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    border: 1px solid #fff;
+    opacity: 0.1;
+    display: block
+}
+
+.top-banner:after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://cdn-s-assets.arzamas.academy/assets/radio/wave-mobile-05d2e13bbdba861f6c8684acc7928dd42c0b3be2f0d9ee6c23b5bbe0257a85f4.svg) 0% 50% repeat-x;
+    background-size: 360px;
+    opacity: 0.05;
+    position: absolute
+}
+
+@media only screen and (min-width: 667px) {
+    .top-banner {
+        display: none
+    }
+}
+
+.top-banner__wrap {
+    position: relative;
+    z-index: 2
+}
+
+.top-banner__logo {
+    width: 64px;
+    height: 64px;
+    background: url(https://cdn-s-assets.arzamas.academy/assets/header/radio-logo-597e44020ab6cc222ed69571b0454ef9557113a9236a25c696bf172c8fa3ea2a.png) 50% 50% no-repeat;
+    background-size: 64px;
+    position: absolute;
+    top: 16px;
+    left: 16px
+}
+
+.top-banner__desc {
+    color: #999;
+    font-family: "Formular", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2px
+}
+
+.top-banner__title {
+    color: #fff;
+    font-family: "Formular", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 5px
+}
+
+.top-banner__btn {
+    width: 103px;
+    height: 21px;
+    display: block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
+    border-radius: 3px;
+    background-color: #0f9;
+    text-align: center;
+    border: none !important;
+    display: none
+}
+
+.top-banner__btn span {
+    color: #1a1a1a;
+    font-family: "Formular", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.top-banner__close-btn {
+    width: 48px;
+    height: 44px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: url(https://cdn-s-assets.arzamas.academy/assets/svg/i-close-white-normal-c3f138cb600b36805b086e31251a23fe95039018c7d3dc5606285543cad71ad5.svg) 50% 50% no-repeat;
+    background-size: 16px;
+    border: none;
+    z-index: 3
+}
+.site-header {
+    background: transparent;
+    transition: all 0.3s ease;
+    z-index: 99
+}
+.site-header--active {
+    background: #000
+}
+@media only screen and (min-width: 667px) {
+    .site-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        min-width: 960px
+    }
+}
+@media only screen and (max-width: 667px) {
+    .site-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex
+    }
+}
+@media only screen and (max-width: 667px) {
+    .site-header__overlay {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 98;
+        display: none;
+        opacity: 0;
+        transition: all 0.3s ease
+    }
+    .site-header__overlay--active {
+        display: block;
+        animation: site-header__overlay-show 0.2s ease;
+        animation-fill-mode: forwards
+    }
+}
+@keyframes site-header__overlay-show {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+@media only screen and (min-width: 667px) {
+    .site-header__dropdown-button {
+        display: none
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .site-header__dropdown-button {
+        width: 60px;
+        height: 60px;
+        background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNCA1SDIwVjdINFY1WiIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJNNCAxMUgyMFYxM0g0VjExWiIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJNNCAxN0gyMFYxOUg0VjE3WiIgZmlsbD0id2hpdGUiLz48L3N2Zz4=) 50% 50% no-repeat;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        position: relative
+    }
+    .site-header__dropdown-button::after {
+        content: "";
+        width: 1px;
+        height: 32px;
+        display: block;
+        position: absolute;
+        top: 14px;
+        right: -1px;
+        background: rgba(255, 255, 255, 0.2)
+    }
+}
+
+@media only screen and (min-width: 667px) {
+    .site-header__dropdown-cross {
+        display: none
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .site-header__dropdown-cross {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 18px;
+        left: 18px;
+        border: none;
+        background: transparent url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNy43MjMwMiA3TDE3LjcyMyAxN00xNy43MjMgN0w3LjcyMzAyIDE3IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4=) 50% 50% no-repeat;
+        outline: none;
+        cursor: pointer
+    }
+}
+
+@media only screen and (min-width: 667px) {
+    .site-header__dropdown-menu {
+        width: 100%;
+        height: 60px;
+        position: relative;
+        display: flex
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .site-header__dropdown-menu {
+        position: fixed;
+        overflow-y: scroll;
+        top: 0;
+        left: -100%;
+        width: calc(100% - 60px);
+        min-height: 100%;
+        height: 100%;
+        background-color: #1a1a1a;
+        flex-direction: column;
+        z-index: 100;
+        animation: site-header__menu-close 0.2s ease;
+        animation-fill-mode: forwards;
+        transition: all 0.3s ease
+    }
+    .site-header__dropdown-menu::-webkit-scrollbar {
+        width: 0px;
+        background: transparent
+    }
+    .site-header__dropdown-menu--active {
+        display: flex;
+        animation: site-header__menu-open 0.2s ease;
+        animation-fill-mode: forwards
+    }
+}
+
+@keyframes site-header__menu-open {
+    from {
+        left: -100%
+    }
+    to {
+        left: 0
+    }
+}
+
+@keyframes site-header__menu-close {
+    from {
+        left: 0%
+    }
+    to {
+        left: -100%
+    }
+}
+
+@media only screen and (min-width: 667px) {
+    .site-header__logo {
+        display: block;
+        order: 1;
+        width: 60px;
+        height: 60px;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjQuOTIwNiAyNC41NDYxTDE3LjY5MSA0SDEzLjU0OTRMMTIuMjE2NCA3LjgwMjU1TDE4LjAwNiAyNC41NDYxQzE4LjM1NjcgMjUuNTkzNSAxOC4yNTEyIDI2LjYwMzkgMTYuMDA1OCAyNi42MDM5VjI4SDI3LjMwNDFWMjYuNjAzOUMyNi4zNTc2IDI2LjYwMzkgMjUuNDQ1MSAyNi4wODEgMjQuOTIwNiAyNC41NDYxWiIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJNMTEuNzIxNCAyMi45Njk1QzEwLjA3OTcgMjIuOTY5NSA4LjUgMjIuMTUzNSA4LjUgMTkuODc2NkM4LjUgMTcuNTk4MSAxMC4wNzk3IDE2Ljc0OTcgMTEuNzIxNCAxNi43NDk3QzEzLjMyNzUgMTYuNzQ5NyAxNC45NTk5IDE3LjU5OTcgMTQuOTU5OSAxOS44NzY2QzE0Ljk1OTkgMjIuMTUzNSAxMy4zMjc1IDIyLjk2OTUgMTEuNzIxNCAyMi45Njk1WiIgZmlsbD0id2hpdGUiLz48L3N2Zz4=);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        transition: all 0.2s ease;
+        border-bottom: none !important
+    }
+    .site-header__logo:hover {
+        opacity: 0.6
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .site-header__logo {
+        order: 1;
+        flex: none;
+        display: block;
+        width: 48px;
+        height: 48px;
+        margin: 48px auto;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjQuOTIwNiAyNC41NDYxTDE3LjY5MSA0SDEzLjU0OTRMMTIuMjE2NCA3LjgwMjU1TDE4LjAwNiAyNC41NDYxQzE4LjM1NjcgMjUuNTkzNSAxOC4yNTEyIDI2LjYwMzkgMTYuMDA1OCAyNi42MDM5VjI4SDI3LjMwNDFWMjYuNjAzOUMyNi4zNTc2IDI2LjYwMzkgMjUuNDQ1MSAyNi4wODEgMjQuOTIwNiAyNC41NDYxWiIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJNMTEuNzIxNCAyMi45Njk1QzEwLjA3OTcgMjIuOTY5NSA4LjUgMjIuMTUzNSA4LjUgMTkuODc2NkM4LjUgMTcuNTk4MSAxMC4wNzk3IDE2Ljc0OTcgMTEuNzIxNCAxNi43NDk3QzEzLjMyNzUgMTYuNzQ5NyAxNC45NTk5IDE3LjU5OTcgMTQuOTU5OSAxOS44NzY2QzE0Ljk1OTkgMjIuMTUzNSAxMy4zMjc1IDIyLjk2OTUgMTEuNzIxNCAyMi45Njk1WiIgZmlsbD0id2hpdGUiLz48L3N2Zz4=);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: 64px
+    }
+}
+
+@media only screen and (min-width: 667px) {
+    .site-header__additional-logo {
+        display: none
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .site-header__additional-logo {
+        display: block;
+        position: absolute;
+        background: url(https://cdn-s-assets.arzamas.academy/assets/main-logo-white.svg) 48% 48% no-repeat;
+        width: 160px;
+        height: 60px;
+        background-size: 94px;
+        top: 0;
+        left: 50%;
+        margin-left: -80px;
+        border-bottom: none !important
+    }
+    .header-page--has-logo .site-header__additional-logo {
+        display: none
+    }
+}
+
+@media only screen and (min-width: 667px) {
+    .site-header__nav {
+        order: 2;
+        position: relative
+    }
+    .site-header__nav::before,
+    .site-header__nav::after {
+        content: "";
+        width: 1px;
+        height: 32px;
+        display: block;
+        position: absolute;
+        top: 14px;
+        background: rgba(255, 255, 255, 0.2)
+    }
+    .site-header__nav::before {
+        left: 0
+    }
+    .site-header__nav::after {
+        right: 0
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .site-header__nav {
+        order: 3;
+        margin: 0 16px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+    }
+}
+
+@media only screen and (min-width: 667px) {
+    .site-header__nav-list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .site-header__nav-list {
+        padding: 28px 0 30px 32px;
+        margin: 0
+    }
+}
+
+@media only screen and (min-width: 667px) {
+    .site-header__nav-item {
+        list-style: none;
+        padding-top: 20px;
+        margin: 0 25px 0 0
+    }
+    .site-header__nav-item:first-child {
+        margin-left: 25px
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .site-header__nav-item {
+        list-style: none;
+        position: relative;
+        padding: 0;
+        margin-bottom: 28px
+    }
+    .site-header__nav-item:last-child {
+        margin-bottom: 0
+    }
+    .site-header__nav-item::before {
+        content: "";
+        width: 4px;
+        height: 4px;
+        background-color: rgba(255, 255, 255, 0.3);
+        display: block;
+        position: absolute;
+        left: -22px;
+        top: 8px;
+        border-radius: 50%
+    }
+}
+
+@media only screen and (min-width: 667px) {
+    .site-header__nav-link {
+        font-family: "Formular", sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 18px;
+        color: #fff;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        border-bottom: 1px solid transparent
+    }
+    .site-header__nav-link:hover {
+        border-bottom: 1px solid #fff
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .site-header__nav-link {
+        font-family: "Formular", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
+        color: #ffffff;
+        text-decoration: none
+    }
+}
+
+@media only screen and (min-width: 667px) {
+    .site-header__subnav-button {
+        order: 3;
+        width: 40px;
+        height: 40px;
+        background: transparent url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxOCIgY3k9IjEyIiByPSIyIiBmaWxsPSJ3aGl0ZSIvPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjIiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iNiIgY3k9IjEyIiByPSIyIiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==) 50% 50% no-repeat;
+        border: none;
+        margin: 10px auto 0 13px;
+        display: block;
+        padding: 0;
+        outline: none;
+        flex: none;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        border-bottom: none !important
+    }
+    .site-header__subnav-button:hover {
+        opacity: 0.6
+    }
+    .site-header__subnav-button--active {
+        background-color: rgba(255, 255, 255, 0.1);
+        background-image: url(https://cdn-s-assets.arzamas.academy/assets/header/header-close-btn-c816590c4ac1aa382ad9742d6191752600c896c2a097c490a2a617751667a31e.svg);
+        background-size: 12px
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .site-header__subnav-button {
+        display: none
+    }
+}
+
+@media only screen and (min-width: 667px) {
+    .site-header__subnav {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: calc(100% + 60px);
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+        background-color: #f7f7f7;
+        transition: all 0.2s ease;
+        opacity: 0;
+        pointer-events: none;
+        height: 0;
+        overflow: hidden
+    }
+    .site-header__subnav--active {
+        opacity: 1;
+        height: auto;
+        padding: 11px 0 14px;
+        pointer-events: all
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .site-header__subnav {
+        order: 5;
+        margin: 0 16px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 28px 0 30px 32px
+    }
+}
+
+@media only screen and (min-width: 667px) {
+    .site-header__subnav__items {
+        text-align: center;
+        margin: 0 auto
+    }
+}
+
+@media only screen and (min-width: 667px) {
+    .site-header__subnav__item {
+        color: #1a1a1a;
+        font-family: "Formular", sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 32px;
+        white-space: nowrap;
+        display: inline-block;
+        border-bottom: none !important;
+        text-decoration: none
+    }
+    .site-header__subnav__item span {
+        transition: all 0.2s ease;
+        border-bottom: 1px solid transparent
+    }
+    .site-header__subnav__item span:hover {
+        border-bottom: 1px solid #1a1a1a
+    }
+    .site-header__subnav__item:not(:last-child)::after {
+        content: "";
+        width: 4px;
+        height: 4px;
+        position: relative;
+        top: -1px;
+        background-color: #bfbfbf;
+        border-radius: 50%;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 20px
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .site-header__subnav__item {
+        position: relative;
+        padding: 0 16px 0 0;
+        margin-bottom: 28px;
+        display: block;
+        font-family: "Formular", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        border-bottom: none !important
+    }
+    .site-header__subnav__item::before {
+        content: "";
+        width: 4px;
+        height: 4px;
+        background-color: rgba(255, 255, 255, 0.3);
+        display: block;
+        position: absolute;
+        left: -22px;
+        top: 8px;
+        border-radius: 50%
+    }
+}
+
+@keyframes gift-animation {
+    0% {
+        transform: rotate(0deg) scale(1)
+    }
+    5% {
+        transform: rotate(-30deg) scale(1.2)
+    }
+    7% {
+        transform: rotate(30deg) scale(1)
+    }
+    9% {
+        transform: rotate(-30deg) scale(1)
+    }
+    14% {
+        transform: rotate(0) scale(1)
+    }
+}
+
+@media only screen and (min-width: 667px) {
+    .site-header__get-promocode {
+        animation: gift-animation 5s ease infinite;
+        order: 4;
+        width: 60px;
+        height: 60px;
+        background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMyAxMkgyMU0zIDEyVjIwQzMgMjEuMTA0NiAzLjg5NTQzIDIyIDUgMjJIMTlDMjAuMTA0NiAyMiAyMSAyMS4xMDQ2IDIxIDIwVjEyTTMgMTJDMS44OTU0MyAxMiAxIDExLjEwNDYgMSAxMFY5QzEgNy44OTU0MyAxLjg5NTQzIDcgMyA3SDIxQzIyLjEwNDYgNyAyMyA3Ljg5NTQzIDIzIDlWMTBDMjMgMTEuMTA0NiAyMi4xMDQ2IDEyIDIxIDEyTTEyIDdWMjJNMTIgN0MxMiA3IDE1LjExOTMgNyAxNi41IDdDMTcuODgwNyA3IDE5IDUuODgwNzEgMTkgNC41QzE5IDMuMTE5MjkgMTcuODgwNyAyIDE2LjUgMkMxMyAyIDEyIDcgMTIgN1pNMTIgN0MxMiA3IDguODgwNzEgNyA3LjUgN0M2LjExOTI5IDcgNSA1Ljg4MDcxIDUgNC41QzUgMy4xMTkyOSA2LjExOTI5IDIgNy41IDJDMTEgMiAxMiA3IDEyIDdaIiBzdHJva2U9InVybCgjcGFpbnQwX2xpbmVhcikiIHN0cm9rZS13aWR0aD0iMiIvPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhciIgeDE9IjEiIHkxPSIyMiIgeDI9IjIwLjkwOTUiIHkyPSIwLjA5OTU0NzUiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjRkY5OTAwIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjRkZDQzAwIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PC9zdmc+) 50% 50% no-repeat;
+        display: block;
+        transition: all 0.2s ease;
+        border-bottom: none !important
+    }
+    .site-header__get-promocode:hover {
+        opacity: 0.6
+    }
+    .site-header__get-promocode:hover::after {
+        background: rgba(255, 255, 255, 0.35)
+    }
+    .site-header__get-promocode span {
+        display: none
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .site-header__get-promocode {
+        order: 4;
+        display: flex;
+        flex: none;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 0 16px;
+        padding: 28px 4px 29px;
+        text-decoration: none
+    }
+    .site-header__get-promocode::before {
+        content: "";
+        width: 24px;
+        height: 24px;
+        background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMyAxMkgyMU0zIDEyVjIwQzMgMjEuMTA0NiAzLjg5NTQzIDIyIDUgMjJIMTlDMjAuMTA0NiAyMiAyMSAyMS4xMDQ2IDIxIDIwVjEyTTMgMTJDMS44OTU0MyAxMiAxIDExLjEwNDYgMSAxMFY5QzEgNy44OTU0MyAxLjg5NTQzIDcgMyA3SDIxQzIyLjEwNDYgNyAyMyA3Ljg5NTQzIDIzIDlWMTBDMjMgMTEuMTA0NiAyMi4xMDQ2IDEyIDIxIDEyTTEyIDdWMjJNMTIgN0MxMiA3IDE1LjExOTMgNyAxNi41IDdDMTcuODgwNyA3IDE5IDUuODgwNzEgMTkgNC41QzE5IDMuMTE5MjkgMTcuODgwNyAyIDE2LjUgMkMxMyAyIDEyIDcgMTIgN1pNMTIgN0MxMiA3IDguODgwNzEgNyA3LjUgN0M2LjExOTI5IDcgNSA1Ljg4MDcxIDUgNC41QzUgMy4xMTkyOSA2LjExOTI5IDIgNy41IDJDMTEgMiAxMiA3IDEyIDdaIiBzdHJva2U9InVybCgjcGFpbnQwX2xpbmVhcikiIHN0cm9rZS13aWR0aD0iMiIvPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhciIgeDE9IjEiIHkxPSIyMiIgeDI9IjIwLjkwOTUiIHkyPSIwLjA5OTU0NzUiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjRkY5OTAwIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjRkZDQzAwIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PC9zdmc+) 50% 50% no-repeat;
+        flex: none
+    }
+    .site-header__get-promocode span {
+        font-family: "Formular", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
+        color: #ffcc00;
+        margin-left: 20px;
+        margin-top: 2px;
+        display: block
+    }
+}
+
+@media only screen and (min-width: 667px) {
+    .site-header__border {
+        width: 1px;
+        height: 32px;
+        display: block;
+        margin-top: 14px;
+        background: rgba(255, 255, 255, 0.2);
+        transition: all 0.2s ease
+    }
+    .site-header__get-promocode+.site-header__border {
+        order: 5
+    }
+    .site-header__login-button+.site-header__border {
+        order: 7
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .site-header__border {
+        display: none
+    }
+}
+
+@media only screen and (min-width: 667px) {
+    .site-header__login-button {
+        max-width: 150px;
+        order: 6;
+        height: 60px;
+        background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMEM1LjQgMCAwIDUuNCAwIDEyQzAgMTguNiA1LjQgMjQgMTIgMjRDMTguNiAyNCAyNCAxOC42IDI0IDEyQzI0IDUuNCAxOC42IDAgMTIgMFpNNS44NSAyMC4wMkM2LjA4IDE2LjggOC43NyAxNC4zMiAxMiAxNC4zMkMxNS4zIDE0LjMyIDE3LjkyIDE2Ljg3IDE4LjE1IDIwLjAyQzE2LjQzIDIxLjM3IDE0LjMzIDIyLjEyIDEyIDIyLjEyQzkuNjcgMjIuMTIgNy41IDIxLjMgNS44NSAyMC4wMlpNOSA5LjM4QzkgNy43MyAxMC4zNSA2LjM4IDEyIDYuMzhDMTMuNjUgNi4zOCAxNSA3LjczIDE1IDkuMzhDMTUgMTEuMDMgMTMuNjUgMTIuMzggMTIgMTIuMzhDMTAuMzUgMTIuMzggOSAxMS4wMyA5IDkuMzhaTTE5LjggMTguNDVDMTkuMiAxNi4wNSAxNy40OCAxNC4xIDE1LjIzIDEzLjEzQzE2LjI4IDEyLjIzIDE2Ljg4IDEwLjk1IDE2Ljg4IDkuNDVDMTYuODggNi43NSAxNC43MSA0LjU4IDEyLjAxIDQuNThDOS4zMSA0LjU4IDcuMTQgNi43NSA3LjE0IDkuNDVDNy4xNCAxMC44NyA3LjgxIDEyLjIyIDguNzkgMTMuMTNDNi41MyAxNC4xIDQuOCAxNi4wNSA0LjIgMTguNDVDMi43NyAxNi43MyAxLjg4IDE0LjQ4IDEuODggMTJDMS44OCA2LjQ1IDYuMzggMS44OCAxMiAxLjg4QzE3LjYzIDEuODggMjIuMTIgNi40NSAyMi4xMiAxMkMyMi4xMiAxNC40IDIxLjIzIDE2LjY1IDE5LjggMTguNDVaIiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==) 18px 50% no-repeat;
+        border: none;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        padding-left: 54px;
+        padding-right: 6px;
+        outline: none;
+        flex: none;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.2s ease;
+        border: none !important
+    }
+    .site-header__login-button:hover {
+        opacity: 0.6
+    }
+    .site-header__login-button:hover::after,
+    .site-header__login-button:hover::before {
+        background: rgba(255, 255, 255, 0.35)
+    }
+    .site-header__login-button span {
+        padding-right: 12px;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 18px;
+        color: #FFFFFF;
+        text-overflow: ellipsis;
+        overflow: hidden
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .site-header__login-button {
+        order: 2;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin: 0 16px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 28px 0;
+        outline: none;
+        cursor: pointer
+    }
+    .site-header__login-button::before {
+        content: "";
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: transparent url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMEM1LjQgMCAwIDUuNCAwIDEyQzAgMTguNiA1LjQgMjQgMTIgMjRDMTguNiAyNCAyNCAxOC42IDI0IDEyQzI0IDUuNCAxOC42IDAgMTIgMFpNNS44NSAyMC4wMkM2LjA4IDE2LjggOC43NyAxNC4zMiAxMiAxNC4zMkMxNS4zIDE0LjMyIDE3LjkyIDE2Ljg3IDE4LjE1IDIwLjAyQzE2LjQzIDIxLjM3IDE0LjMzIDIyLjEyIDEyIDIyLjEyQzkuNjcgMjIuMTIgNy41IDIxLjMgNS44NSAyMC4wMlpNOSA5LjM4QzkgNy43MyAxMC4zNSA2LjM4IDEyIDYuMzhDMTMuNjUgNi4zOCAxNSA3LjczIDE1IDkuMzhDMTUgMTEuMDMgMTMuNjUgMTIuMzggMTIgMTIuMzhDMTAuMzUgMTIuMzggOSAxMS4wMyA5IDkuMzhaTTE5LjggMTguNDVDMTkuMiAxNi4wNSAxNy40OCAxNC4xIDE1LjIzIDEzLjEzQzE2LjI4IDEyLjIzIDE2Ljg4IDEwLjk1IDE2Ljg4IDkuNDVDMTYuODggNi43NSAxNC43MSA0LjU4IDEyLjAxIDQuNThDOS4zMSA0LjU4IDcuMTQgNi43NSA3LjE0IDkuNDVDNy4xNCAxMC44NyA3LjgxIDEyLjIyIDguNzkgMTMuMTNDNi41MyAxNC4xIDQuOCAxNi4wNSA0LjIgMTguNDVDMi43NyAxNi43MyAxLjg4IDE0LjQ4IDEuODggMTJDMS44OCA2LjQ1IDYuMzggMS44OCAxMiAxLjg4QzE3LjYzIDEuODggMjIuMTIgNi40NSAyMi4xMiAxMkMyMi4xMiAxNC40IDIxLjIzIDE2LjY1IDE5LjggMTguNDVaIiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==) 50% 50% no-repeat
+    }
+    .site-header__login-button span {
+        font-family: "Formular", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
+        color: #fff;
+        margin-left: 20px
+    }
+}
+
+@media only screen and (min-width: 667px) {
+    .site-header__search-button {
+        order: 8;
+        width: 40px;
+        height: 40px;
+        background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTYgMTZMMjEgMjFNMTggMTFDMTggMTQuODY2IDE0Ljg2NiAxOCAxMSAxOEM3LjEzNDAxIDE4IDQgMTQuODY2IDQgMTFDNCA3LjEzNDAxIDcuMTM0MDEgNCAxMSA0QzE0Ljg2NiA0IDE4IDcuMTM0MDEgMTggMTFaIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4=) 50% 50% no-repeat;
+        border: none;
+        margin: 10px;
+        display: block;
+        padding: 0;
+        outline: none;
+        flex: none;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        border-bottom: none !important
+    }
+    .site-header__search-button:hover {
+        opacity: 0.6
+    }
+    .site-header__search-button--active {
+        background-color: rgba(255, 255, 255, 0.1);
+        background-image: url(https://cdn-s-assets.arzamas.academy/assets/header/header-close-btn-c816590c4ac1aa382ad9742d6191752600c896c2a097c490a2a617751667a31e.svg);
+        background-size: 12px
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .site-header__search-button {
+        width: 40px;
+        height: 40px;
+        background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTYgMTZMMjEgMjFNMTggMTFDMTggMTQuODY2IDE0Ljg2NiAxOCAxMSAxOEM3LjEzNDAxIDE4IDQgMTQuODY2IDQgMTFDNCA3LjEzNDAxIDcuMTM0MDEgNCAxMSA0QzE0Ljg2NiA0IDE4IDcuMTM0MDEgMTggMTFaIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4=) 50% 50% no-repeat;
+        border: none;
+        margin: 10px 10px 10px auto;
+        display: block;
+        padding: 0;
+        outline: none;
+        flex: none;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: all 0.2s ease;
+        position: relative
+    }
+    .site-header__search-button--active {
+        background-color: rgba(255, 255, 255, 0.1);
+        background-image: url(https://cdn-s-assets.arzamas.academy/assets/header/header-close-btn-c816590c4ac1aa382ad9742d6191752600c896c2a097c490a2a617751667a31e.svg);
+        background-size: 12px
+    }
+    .site-header__search-button::before {
+        content: "";
+        width: 1px;
+        height: 32px;
+        display: block;
+        position: absolute;
+        top: 4px;
+        left: -11px;
+        background: rgba(255, 255, 255, 0.2)
+    }
+}
+
+.site-header__search {
+    background: #f2f2f2;
+    height: 0;
+    overflow: hidden;
+    font-size: 30px;
+    font-family: "Lava 3", serif;
+    font-weight: normal;
+    font-style: italic;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    right: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease
+}
+
+.site-header__search--active {
+    height: 60px;
+    pointer-events: all;
+    opacity: 1
+}
+
+input.site-header__search-input {
+    background: #f2f2f2;
+    border: none;
+    font: inherit;
+    width: 100%;
+    height: 60px;
+    padding: 10px 60px 10px 22px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+.site-header__search-submit {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTYgMTZMMjEgMjFNMTggMTFDMTggMTQuODY2IDE0Ljg2NiAxOCAxMSAxOEM3LjEzNDAxIDE4IDQgMTQuODY2IDQgMTFDNCA3LjEzNDAxIDcuMTM0MDEgNCAxMSA0QzE0Ljg2NiA0IDE4IDcuMTM0MDEgMTggMTFaIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4=);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    text-indent: -9999px;
+    cursor: pointer
+}
+
+header.header-block {
+    border-bottom: 1px solid #999999;
+    height: 42px;
+    font: normal 21px/42px "Lava 3", serif, Arial, Helvetica, Geneva, sans-serif;
+    color: #1a1a1a;
+    margin-bottom: 30px
+}
+
+header.header-block a.all-link {
+    float: right;
+    font: 500 15px/1 "Formular", sans-serif;
+    margin-top: 14px
+}
+.header-page-dark {
+    background-color: #000000
+}
