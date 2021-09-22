@@ -8,11 +8,16 @@ $(document).ready(function () {
     if(pageWidth < mobileSize){
         specialItem__dots.style.backgroundImage = "url('/svg/dots_mobile.svg')";
         //меняем местами блоки
-        $('.article-item__img').clone().appendTo('.special-item__article_promo');
-        $('.article-item__caption').clone().appendTo('.special-item__article');
-
-        specialItem__article.removeChild(document.querySelector('.article-item__img'));
-        specialItem__article.removeChild(document.querySelector('.article-item__caption'));
+        const article = document.querySelectorAll(".special-item__article");//берем все статьи
+        for (var i = 0; i < article.length; i++) {//проходим по списку
+          while (article[i].childElementCount != 1) {//внутри узла идем по детям пока не будет 1 дочерний узел
+            if(!article[i].lastElementChild.classList.contains('article-item__title')){//если в списке классов нет нужного
+              article[i].parentNode.insertBefore(article[i].lastElementChild, article[i].nextSibling);//то выносим его за рамку статьи
+            }else{//если попался нужный закидываем его в начало списка
+              article[i].insertBefore(article[i].lastElementChild, article[i].firstChild);
+            }
+          }
+        }
     }else{
         specialItem__dots.style.backgroundImage = "url('/svg/dots.svg')"
     }
