@@ -1,67 +1,44 @@
 $(document).ready(function () {
-  var objToStick = $(".special-item__sidebar"); //Получаем нужный объект
-  var topOfObjToStick = $(objToStick).offset().top; //Получаем начальное расположение нашего блока
+  const sidebar = $(".special-item__sidebar"); //Получаем нужный объект
+  const topOfSidebar = $(sidebar).offset().top;
+  const sections = $('section');
+  const sidebar_height = sidebar.outerHeight();
+  $(window).scroll(function () {
 
-//   function getCoords(elem) {
-//   // (1)
-//   var box = elem.getBoundingClientRect();
-//
-//   var body = document.body;
-//   var docEl = document.documentElement;
-//
-//   // (2)
-//   var scrollTop = window.pageYOffset || docEl.scrollTop || body.scrollTop;
-//   var scrollLeft = window.pageXOffset || docEl.scrollLeft || body.scrollLeft;
-//
-//   // (3)
-//   var clientTop = docEl.clientTop || body.clientTop || 0;
-//   var clientLeft = docEl.clientLeft || body.clientLeft || 0;
-//
-//   // (4)
-//   var top = box.top + scrollTop - clientTop;
-//   var left = box.left + scrollLeft - clientLeft;
-//
-//   return {
-//     top: top,
-//     left: left
-//   };
-// }
-console.log(objToStick);
-      $(window).scroll(function () {
-          var windowScroll = $(window).scrollTop(); //Получаем величину, показывающую на сколько прокручено окно
-          if (windowScroll - (screen.height-screen.availHeight) >= topOfObjToStick-objToStick.height() ) { // Если прокрутили больше, чем расстояние до блока, то приклеиваем его
-              $(objToStick).addClass("special-item__sidebar_visible");
-          } else {
-              $(objToStick).removeClass("special-item__sidebar_visible");
-          };
-      });
-   //    $(document).scroll(function () {
-   //      var el = $('.special-item__sidebar')[0];
-   //      var el_y = getCoords(el)  ;
-   //      console.log(getCoords(el).top);
-   //      if ($(window).scrollTop() >= getCoords(el).top) {
-   //          $(".special-item__sidebar").addClass("special-item__sidebar_visible");
-   //      }
-   //      else {
-   //          $(".special-item__sidebar").removeClass("special-item__sidebar_visible");
-   //      }
-   // });
+    var cur_pos = $(this).scrollTop(),
+    sections = $('.special-item__article-box');
+    sections.each(function() {
+      var top = $(this).offset().top - sidebar_height,
+          bottom = top + $(this).outerHeight();
 
+      if (cur_pos >= top && cur_pos <= bottom) {
+
+      sidebar.find('a').removeClass('sidebar-item_active');
+      sections.removeClass('special-item__article-box_active');
+
+      $(this).addClass('special-item__article-box_active');
+      sidebar.find('a[href="#'+$(this).attr('id')+'"]').addClass('sidebar-item_active');
+      }
+    });
+
+    sidebar.find('a').on('click', function () {
+      var $el = $(this)
+        , id = $el.attr('href');
+
+      $('html, body').animate({
+        scrollTop: $(id).offset().top - sidebar_height
+      }, 500);
+
+      return false;
+    });
+
+    console.log(sidebar.position().top);
+      var scrollTop = $(this).scrollTop();
+      if (scrollTop  > topOfSidebar - sidebar.position().top ) { // Если прокрутили больше, чем расстояние до блока, то приклеиваем его
+          $(sidebar).addClass("special-item__sidebar_visible");
+      } else {
+          $(sidebar).removeClass("special-item__sidebar_visible");
+      };
+
+  });
 });
-
-//    $(document).scroll(function () {
-//  s_top = $("body").scrollTop();
-//  yes = $('.special-item__sidebar').offset().top;
-//  if(s_top > yes){
-//      console.log("Yes");
-//  }
-// });
-
-// var win = window,
-//     docEl = document.documentElement,
-//     el = document.getElementByClassName('special-item__sidebar')[0];
-// alert(el);
-// win.onscroll = function(){
-//    var sTop = (this.pageYOffset || docEl.scrollTop)  - (docEl.clientTop || 0);
-//    el.style.opacity =  sTop > 100 ? "1":"0" ;
-// };

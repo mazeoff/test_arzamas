@@ -213,7 +213,7 @@ body {
   margin-top: 62px;
 }
 
-.special-item__logo {
+.special-item__logo_promo {
   margin-top: 56px;
 }
 
@@ -240,7 +240,7 @@ body {
 .special-item__content {
   background-color: #F7F7F7;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -254,16 +254,17 @@ body {
 
 .special-item__sidebar {
   width: 200px;
-  opacity: 1;
+  opacity: 0;
   position: absolute;
   top: 0;
-  transform: translateY(135px);
+  transform: translateY(150px);
   left: 150px;
   transition: opacity 0.5s;
 }
 
 .special-item__sidebar_visible {
-  transform: translateY(135px);
+  top: 0;
+  transform: translateY(150px);
   position: fixed;
   left: 190px;
   opacity: 1;
@@ -315,6 +316,10 @@ body {
 
 .special-item__point_disabled {
   background-color: #999999;
+}
+
+.sidebar-item_active {
+  color: #EA6263;
 }
 
 .sidebar-item + .sidebar-item {
