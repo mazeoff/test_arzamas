@@ -49,6 +49,12 @@
   			display: block;
   		}
   	}
+    &__article{
+      width: 296px;
+  		height: 152px;
+      background-position: center;
+  		background-size: contain;
+    }
   }
   .share-item{
     width: 0;

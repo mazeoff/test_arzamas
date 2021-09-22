@@ -107,6 +107,7 @@ body {
   width: 100%;
   position: relative;
   background: #FFF8EA;
+  z-index: 2;
 }
 
 .special-item__octagon::before, .special-item__octagon::after {
@@ -128,6 +129,7 @@ body {
 
 .special-item__octagon_promo::after, .special-item__octagon_promo::before {
   background: #FFF8EA;
+  z-index: -1;
 }
 
 .special-item__octagon_promo::before {
@@ -140,6 +142,7 @@ body {
 
 .special-item__octagon_content::after, .special-item__octagon_content::before {
   background: #F7F7F7;
+  z-index: -1;
 }
 
 .special-item__octagon_content::before {
@@ -344,7 +347,8 @@ body {
 }
 
 .article-item__title {
-  font-weight: 500;
+  font-family: Formular;
+  font-weight: bold;
   font-size: 21px;
   line-height: 133%;
   text-transform: uppercase;

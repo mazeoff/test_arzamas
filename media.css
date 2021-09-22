@@ -44,6 +44,12 @@
   .special-item__share-text_mobile {
     display: block;
   }
+  .special-item__article {
+    width: 296px;
+    height: 152px;
+    background-position: center;
+    background-size: contain;
+  }
   .share-item {
     width: 0;
     padding: 0 21px;
