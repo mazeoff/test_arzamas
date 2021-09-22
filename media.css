@@ -8,6 +8,21 @@
   .special-item + .special-item {
     margin-top: 20px;
   }
+  .special-item__octagon {
+    border-radius: 2%;
+  }
+  .special-item__octagon_promo::before {
+    border-bottom: 0;
+  }
+  .special-item__octagon_promo::after {
+    border-top: 0;
+  }
+  .special-item__octagon_content::before {
+    border-bottom: 0;
+  }
+  .special-item__octagon_content::after {
+    border-top: 0;
+  }
   .special-item__title, .special-item__caption {
     max-width: 288px;
     min-width: 0;

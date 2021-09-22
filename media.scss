@@ -11,6 +11,25 @@
     &+&{
       margin-top: 20px;
     }
+    &__octagon{
+      border-radius: 2%;
+      &_promo{
+    		&::before{
+    			border-bottom: 0;
+    		}
+    		&::after{
+    			border-top: 0;
+    		}
+    	}
+    	&_content{
+    		&::before{
+    			border-bottom: 0;
+    		}
+    		&::after{
+    			border-top: 0;
+    		}
+    	}
+    }
     &__title, &__caption{
       max-width: 288px;
       min-width: 0;
