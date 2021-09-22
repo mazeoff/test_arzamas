@@ -1,5 +1,6 @@
 $(document).ready(function () {
-  const sidebar = $(".special-item__sidebar"); //Получаем нужный объект
+  const sidebar = $(".special-item__sidebar");
+  const sidebar_popup = $(".special-item__sidebar_mobile");
   const topOfSidebar = $(sidebar).offset().top;
   const sections = $('section');
   const sidebar_height = sidebar.outerHeight();
@@ -32,12 +33,13 @@ $(document).ready(function () {
       return false;
     });
 
-    console.log(sidebar.position().top);
       var scrollTop = $(this).scrollTop();
       if (scrollTop  > topOfSidebar - sidebar.position().top ) { // Если прокрутили больше, чем расстояние до блока, то приклеиваем его
           $(sidebar).addClass("special-item__sidebar_visible");
+          $(sidebar_popup).addClass("special-item__sidebar_visible");
       } else {
           $(sidebar).removeClass("special-item__sidebar_visible");
+          $(sidebar_popup).removeClass("special-item__sidebar_visible");
       };
 
   });
