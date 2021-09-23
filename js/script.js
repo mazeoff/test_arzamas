@@ -1,9 +1,11 @@
 $(document).ready(function () {
   const sidebar = $(".special-item__sidebar");
-  const sidebar_popup = $(".special-item__sidebar_mobile");
+  const sidebar_mobile = $(".special-item__sidebar-mobile");
   const topOfSidebar = $(sidebar).offset().top;
+  const topOfSidebarMobile = $(sidebar_mobile).offset().top;
   const sections = $('section');
   const sidebar_height = sidebar.outerHeight();
+  const mobileSize = 667;
   $(window).scroll(function () {
 
     var cur_pos = $(this).scrollTop(),
@@ -33,14 +35,32 @@ $(document).ready(function () {
       return false;
     });
 
-      var scrollTop = $(this).scrollTop();
-      if (scrollTop  > topOfSidebar - sidebar.position().top ) { // Если прокрутили больше, чем расстояние до блока, то приклеиваем его
-          $(sidebar).addClass("special-item__sidebar_visible");
-          $(sidebar_popup).addClass("special-item__sidebar_visible");
-      } else {
-          $(sidebar).removeClass("special-item__sidebar_visible");
-          $(sidebar_popup).removeClass("special-item__sidebar_visible");
-      };
+    $(window).scroll(function () {
+        var pageWidth = document.documentElement.clientWidth;
+        var scrollTop = $(this).scrollTop();
+        if(pageWidth <= mobileSize){//mobile
+          //$(sidebar).removeClass("special-item__sidebar_visible");
+          if (scrollTop  >= topOfSidebarMobile - sidebar_mobile.position().top ){
+              $(sidebar_mobile).addClass("special-item__sidebar-mobile_visible");
+              $('.special-item__content').addClass("special-item__content_sidebar-active");
+              $('.special-item__content_sidebar-active').css('padding-top',sidebar_mobile.outerHeight(true));
+
+          } else {
+              $(sidebar_mobile).removeClass("special-item__sidebar-mobile_visible");
+              $('.special-item__content_sidebar-active').css('padding-top', 32);
+              $('.special-item__content').removeClass("special-item__content_sidebar-active");
+          }
+        }else{//desktop
+          //$(sidebar_mobile).removeClass("special-item__sidebar-mobile_visible");
+          if (scrollTop  >= topOfSidebar - sidebar.position().top ) { // Если прокрутили больше, чем расстояние до блока, то приклеиваем его
+              $(sidebar).addClass("special-item__sidebar_visible");
+          } else {
+              $(sidebar).removeClass("special-item__sidebar_visible");
+          };
+        }
+
+
+    });
 
   });
 });

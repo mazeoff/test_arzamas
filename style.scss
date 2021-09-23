@@ -228,6 +228,9 @@ body{
 			list-style:disc;
 		}
 	}
+	&__top-popup{
+		display: none;
+	}
 	&__article-list{
 		flex: 1 1 auto;
 		width: 100%;
