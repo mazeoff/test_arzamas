@@ -39,28 +39,24 @@ $(document).ready(function () {
         var pageWidth = document.documentElement.clientWidth;
         var scrollTop = $(this).scrollTop();
         if(pageWidth <= mobileSize){//mobile
-          //$(sidebar).removeClass("special-item__sidebar_visible");
-          if (scrollTop  >= topOfSidebarMobile - sidebar_mobile.position().top ){
-              $(sidebar_mobile).addClass("special-item__sidebar-mobile_visible");
-              $('.special-item__content').addClass("special-item__content_sidebar-active");
-              $('.special-item__content_sidebar-active').css('padding-top',sidebar_mobile.outerHeight(true));
-
-          } else {
-              $(sidebar_mobile).removeClass("special-item__sidebar-mobile_visible");
-              $('.special-item__content_sidebar-active').css('padding-top', 32);
-              $('.special-item__content').removeClass("special-item__content_sidebar-active");
-          }
+          //через position:sticky
         }else{//desktop
-          //$(sidebar_mobile).removeClass("special-item__sidebar-mobile_visible");
           if (scrollTop  >= topOfSidebar - sidebar.position().top ) { // Если прокрутили больше, чем расстояние до блока, то приклеиваем его
               $(sidebar).addClass("special-item__sidebar_visible");
           } else {
               $(sidebar).removeClass("special-item__sidebar_visible");
           };
         }
-
-
     });
-
   });
+
+  var menu = $('.special-item__sidebar-mobile');
+    var speed = 500; 
+    $('a>.special-item__top-popup').click(function(){
+      $('.special-item__sidebar').toggleClass('special-item__sidebar-mobile_visible');
+      $('.special-item__top-popup').toggleClass('special-item__top-popup_opened');
+      $('.special-item__top-popup > img').toggle();
+
+
+       });
 });

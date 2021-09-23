@@ -1,9 +1,5 @@
 
 $(document).ready(function () {
-//замена фона у промо-блока на мобильной версии
-// const sidebar = $(".special-item__sidebar");
-// const sidebar_mobile = $(".special-item__sidebar-mobile");
-// const topOfSidebar = $(sidebar).offset().top;
   function reSize() {
     const sidebar = $(".special-item__sidebar");
     const sidebar_mobile = $(".special-item__sidebar-mobile");
@@ -26,13 +22,8 @@ $(document).ready(function () {
             }
           }
         }
-
-          //$(sidebar).removeClass("special-item__sidebar_visible");
-
     }else{//если десктоп
         specialItem__dots.style.backgroundImage = "url('/svg/dots.svg')"
-        //$(sidebar_mobile).removeClass("special-item__sidebar-mobile_visible");
-
     }
   }
   $(window).load(reSize);
