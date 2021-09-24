@@ -42,7 +42,7 @@
     display: block;
   }
   .special-item__code-delimiter {
-    font-size: 15px;
+    font-size: 4vw;
     margin-top: 24px;
   }
   .special-item__dots {
@@ -61,16 +61,17 @@
     display: block;
   }
   .special-item__article {
-    min-width: 296px;
-    min-height: 152px;
     background-position: center;
-    background-size: contain;
     width: 100%;
-    margin: 0;
+    height: 50vw;
+    padding: 30px;
+    margin-bottom: 0;
+    background-size: 100%, auto, contain;
   }
   .special-item__article-box {
     width: 100%;
     padding: 12px;
+    margin-bottom: 50px;
   }
   .special-item__sidebar {
     display: none;
@@ -160,7 +161,7 @@
     text-align: center;
   }
   .article-item__caption {
-    width: 300px;
+    font-size: 4vw;
   }
   .article-item__caption_promo {
     align-self: center;
