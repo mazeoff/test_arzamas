@@ -50,13 +50,9 @@ $(document).ready(function () {
     });
   });
 
-  var menu = $('.special-item__sidebar-mobile');
-    var speed = 500; 
     $('a>.special-item__top-popup').click(function(){
       $('.special-item__sidebar').toggleClass('special-item__sidebar-mobile_visible');
       $('.special-item__top-popup').toggleClass('special-item__top-popup_opened');
       $('.special-item__top-popup > img').toggle();
-
-
-       });
+    });
 });

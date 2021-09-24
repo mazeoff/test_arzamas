@@ -22,6 +22,9 @@ $(document).ready(function () {
             }
           }
         }
+      //удаляем лишние классы в мобильной версии
+        $('.article-item__title_promo').removeClass('article-item__text_left');
+        $('.article-item__caption_promo').removeClass('article-item__text_left');
     }else{//если десктоп
         specialItem__dots.style.backgroundImage = "url('/svg/dots.svg')"
     }

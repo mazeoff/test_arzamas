@@ -1,4 +1,6 @@
-@import "style.scss";
+@import "variables.scss";
+@import "mixins.scss";
+
 //mobile
 @media only screen and (max-device-width: 667px) {
   $color-share-item__text:#E6E6E6;
@@ -69,10 +71,16 @@
   		}
   	}
     &__article{
-      width: 296px;
-  		height: 152px;
+      min-width: 296px;
+  		min-height: 152px;
       background-position: center;
   		background-size: contain;
+      width: 100%;
+      margin: 0;
+    }
+    &__article-box{
+      width: 100%;
+      padding: 12px;
     }
     &__sidebar{
       display: none;
@@ -83,7 +91,7 @@
   		transform: translateY(0);
   		transition: opacity 0.5s;
       background: #FFFFFF;
-      border-radius: 4px;
+      border-radius: 0px 0px 4px 4px;
       box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
       &-mobile{
         @include flexible_column();
@@ -126,15 +134,17 @@
       &_opened{
         justify-content: flex-start;
         width:100%;
-        border-radius: 0/100%;
+        border-radius: 0;
         box-shadow: none;
-        align-items: flex-start;
+        padding-left: 40px;
+        align-items: center;
         padding: 40px;
         border-bottom: 1px solid $color-gray-text;
         text-transform:capitalize;
         font-weight: bold;
         font-size: 15px;
         transition: all 0.5s easy;
+        border-radius: 4px 4px 0px 0px;
       }
     }
   }
@@ -157,6 +167,9 @@
     }
     &__caption{
       width: 300px;
+      &_promo{
+        align-self: center;
+      }
     }
   }
 }
