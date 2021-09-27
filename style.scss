@@ -147,7 +147,7 @@ body{
 	&__dots{
 		width: 100%;
 		height: 325px;
-	  background: url(/svg/dots.svg) no-repeat;
+	  background: url(svg/dots.svg) no-repeat;
 		background-position: center;
 		background-size: contain;
 	}
@@ -224,7 +224,7 @@ body{
 		margin-bottom: 2em;
 		padding: 3.5em 1.25em;
 		@include flexible_row();
-		background-image: url(/svg/article_border.svg);
+		background-image: url(svg/article_border.svg);
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 		flex-flow: column wrap;
@@ -266,7 +266,7 @@ body{
 	&__img{
 		margin-right: 20px;
 		img{
-			background-image: url(/svg/article_img.svg);
+			background-image: url(svg/article_img.svg);
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
