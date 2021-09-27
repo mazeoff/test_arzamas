@@ -11,7 +11,7 @@ $(document).ready(function () {
     const article = document.querySelectorAll(".special-item__article");//берем все статьи
     if(pageWidth <= mobileSize){//если мобилка
       //меняем фон промо
-        specialItem__dots.style.backgroundImage = "url('/svg/dots_mobile.svg')";
+        specialItem__dots.style.backgroundImage = "url('svg/dots_mobile.svg')";
         //меняем местами блоки
         for (var i = 0; i < article.length; i++) {//проходим по списку
           while (article[i].childElementCount != 1) {//внутри узла идем по детям пока не будет 1 дочерний узел
@@ -26,7 +26,7 @@ $(document).ready(function () {
         $('.article-item__title_promo').removeClass('article-item__text_left');
         $('.article-item__caption_promo').removeClass('article-item__text_left');
     }else{//если десктоп
-        specialItem__dots.style.backgroundImage = "url('/svg/dots.svg')"
+        specialItem__dots.style.backgroundImage = "url('svg/dots.svg')"
     }
   }
   $(window).load(reSize);
