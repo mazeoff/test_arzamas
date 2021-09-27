@@ -24,15 +24,18 @@ $(document).ready(function () {
       }
     });
 
-    sidebar.find('a').on('click', function () {
-      var $el = $(this)
-        , id = $el.attr('href');
-
-      $('html, body').animate({
-        scrollTop: $(id).offset().top - sidebar_height
-      }, 500);
-
-      return false;
+    sidebar.find('.sidebar-item').unbind().click(function () {
+      var id = $(this).find('a').attr('href'),
+          top = $(id).offset().top - sidebar_height;
+        if (id.indexOf('#') != -1) {
+          $('body,html').animate({ scrollTop: top }, 500);
+          if ($(".special-item__sidebar-mobile").is(':visible')) { //если мобильная версия
+              // то при переходе по ссылке закрываем меню
+              $('.special-item__sidebar').toggleClass('special-item__sidebar-mobile_visible');
+              $('.special-item__top-popup').toggleClass('special-item__top-popup_opened');
+              $('.special-item__top-popup > img').toggle();
+          }
+        }
     });
 
     $(window).scroll(function () {
