@@ -2,7 +2,7 @@
 @import "mixins.scss";
 
 //mobile
-@media only screen and (max-device-width: 667px) {
+@media only screen and (max-width: 667px) {
   $color-share-item__text:#E6E6E6;
   .special-content__inner{
     padding: 4.5em 0;
@@ -111,7 +111,7 @@
   }
 }
 //mobile menu
-@media only screen and (min-device-width: 320px) and (max-device-width: 1440px) {
+@media only screen and (min-width: 320px) and (max-width: 1440px) {
 
   .special-item{
     &__sidebar{
@@ -183,7 +183,7 @@
   }
 }
 
-@media only screen and (min-device-width: 667px) and (max-device-width: 1440px) {
+@media only screen and (min-width: 667px) and (max-width: 1440px) {
 
   .special-item{
     &__title, &__caption{
