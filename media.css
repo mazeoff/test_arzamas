@@ -131,7 +131,7 @@
   }
   .special-item__sidebar-mobile_visible {
     display: block;
-    transition: opacity 0.5s;
+    transition: opacity 0.6s;
   }
   .special-item__top-popup {
     display: flex;
