@@ -7,16 +7,16 @@ $(document).ready(function () {
   const sidebar_height = sidebar.outerHeight();
   const sidebar_mobile_height = sidebar_mobile.outerHeight();
   const mobileSize = 667;
+
   $(window).scroll(function () {
 
-  var cur_pos = $(this).scrollTop(),
-  sections = $('.special-item__article-box'),
-  pageWidth = document.documentElement.clientWidth,
-  scrollTop = $(this).scrollTop();
+  var sections = $('.special-item__article-box'),
+      pageWidth = document.documentElement.clientWidth,
+      cur_pos = $(this).scrollTop();
 
     sections.each(function() {
-      var top = $(this).offset().top - sidebar_height,
-          bottom = top + $(this).outerHeight();
+      var top = $(this).offset().top,
+          bottom = top - sidebar_height + $(this).outerHeight();
 
       if (cur_pos >= top && cur_pos <= bottom) {
 
@@ -29,11 +29,10 @@ $(document).ready(function () {
     });
 
     var pageWidth = document.documentElement.clientWidth;
-    var scrollTop = $(this).scrollTop();
     if(pageWidth <= mobileSize){//mobile
       //через position:sticky
     }else{//desktop
-      if (scrollTop  >= topOfSidebar - sidebar.position().top ) { // Если прокрутили больше, чем расстояние до блока, то приклеиваем его
+      if (cur_pos  >= topOfSidebar - sidebar.position().top ) { // Если прокрутили больше, чем расстояние до блока, то приклеиваем его
           $(sidebar).addClass("special-item__sidebar_visible");
       } else {
           $(sidebar).removeClass("special-item__sidebar_visible");
@@ -45,11 +44,13 @@ $(document).ready(function () {
     var id = $(this).find('a').attr('href'),
         top = $(id).offset().top;
       if (id.indexOf('#') != -1) {
-        $('body,html').animate({ scrollTop: top }, 500);
         if ($(".special-item__sidebar-mobile").is(':visible')) { //если мобильная версия
-            // то при переходе по ссылке закрываем меню
-            openClosePopUp();
-      }
+          // то при переходе по ссылке закрываем меню
+          openClosePopUp();
+          $('body,html').animate({ scrollTop: top - sidebar_mobile_height - sidebar_height }, 500);
+        }else{
+          $('body,html').animate({ scrollTop: top }, 500);
+        }
     }
   });
 
